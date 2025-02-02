@@ -25,7 +25,7 @@ import { getAnalytics } from "firebase/analytics";
 
 // Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBNyzV_kxXAOO3Dl18aWhrwWtHmLWBQdGU",
+  apiKey: "Enter your Google_API_KEY",
   authDomain: "genai-diet-app.firebaseapp.com",
   projectId: "genai-diet-app",
   storageBucket: "genai-diet-app.appspot.com",
