@@ -28,7 +28,7 @@
     "client": "react-scripts start",
     "build": "npm run build-client",
     "build-client": "react-scripts build"
-}
+},
 
   "eslintConfig": {
     "extends": [
