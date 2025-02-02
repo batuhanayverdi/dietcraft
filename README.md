@@ -86,6 +86,3 @@ DIATING-IA-MASTER/
 📩 Contact
 If you have any questions or feedback, feel free to reach out!
 📧 Email: batuhanayverdi01@gmail.com & hnurtutuk@gmail.com
-
-## Authors
-- Batuhan Ayverdi & Hamide Nur Tutuk & Kaoutar Ait Benali 🖥️
