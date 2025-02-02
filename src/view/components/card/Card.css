@@ -1,0 +1,252 @@
+/* ✅ Navbar Flexbox Düzenlemesi */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Sağ ve sola boşluk bırakır */
+    align-items: center; /* Dikeyde ortalama yapar */
+    padding: 10px 20px;
+    background-color: #66d16e;
+    border-radius: 20px;
+    box-sizing: border-box; /* Padding ve border'ı dahil eder */
+    width: 100%; /* Tam genişlik kaplaması */
+    position: fixed; /* Sayfanın üstüne sabitler */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Diğer elementlerin önünde kalır */
+}
+
+/* Yıldız, linkler ve buton hizalama */
+.nav-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome-button {
+    background-color: lightgray;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ✅ Sayfa Genel Ayarları */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ✅ Kart Konteyneri */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 150px auto; /* Navbar çarpışmasını engellemek için üst boşluk bırakıldı */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    gap: 50px;
+}
+
+/* ✅ Form Bölümü */
+.form-section {
+    background-color: #66d16e;
+    border-radius: 20px;
+    padding: 30px;
+    flex: 1;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ✅ Buton Sağ Alta Sabitlendi */
+.card-button {
+    background-color: #b5d6a7;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    float: right; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+/* ✅ Resmi forma göre ortaladık ve boyunu uzattık */
+/* ✅ Resmi daha da büyüttük ve tam ortaladık */
+/* ✅ Sadece resmin yüksekliği uzatıldı, genişlik sabit kaldı */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center;     /* Dikeyde ortalama */
+}
+
+.card-image {
+    width: 550px;    /* Genişlik sabit kaldı */
+    height: 900px;   /* Yükseklik artırıldı */
+    border-radius: 20px;
+    object-fit: cover;  /* Oranı koruyarak kırpma */
+    max-width: 100%;    /* Aşırı büyümeyi engeller */
+}
+
+/* ✅ Modal İçerik Düzeltmeleri */
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 80%;
+    width: 700px;
+    z-index: 1050;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+/* ✅ Tablo Genişliği ve Boşluk Ayarları */
+.diet-plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.diet-plan-table th, .diet-plan-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.diet-plan-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.diet-plan-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.diet-plan-table tr:nth-child(odd) {
+    background-color: rgba(230, 230, 230, 0.9);
+}
+
+.loading-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000; /* Daha yüksek bir z-index */
+}
+
+.loading-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 1.2rem;
+}
+/* ✅ Buzdolabındaki Malzemeler Listeleme */
+.fridge-items-list {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.fridge-items-list h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.fridge-items-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fridge-items-list li {
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.fridge-items-list li:last-child {
+    border-bottom: none;
+}
+/* ✅ Butonları sola hizala ve yan yana koy */
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Butonları sola yasla */
+    gap: 10px; /* Butonlar arasına boşluk bırak */
+    margin-top: 15px; /* Üstten boşluk ekle */
+}
+/* ✅ Butonları yatayda düzenle */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Butonları sol ve sağa it */
+    align-items: center;
+    width: 100%; /* Tam genişlik kullan */
+    margin-top: 15px;
+}
+
+/* Analyze Fridge Butonu (Sol Tarafa) */
+.left-button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Create My Dietary Plan Butonu (Sağ Tarafa) */
+.right-button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}

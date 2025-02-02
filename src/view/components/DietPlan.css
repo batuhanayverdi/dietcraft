@@ -1,0 +1,247 @@
+/* ✅ Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #66d16e;
+    border-radius: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #4fae51;
+}
+
+.navbar button {
+    background-color: white;
+    border: 2px solid #4fae51;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #4fae51;
+    color: white;
+    border: 2px solid white;
+}
+
+.welcome-button {
+    background-color: white;
+    border: 2px solid #66d16e;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.welcome-button:hover {
+    background-color: #4fae51;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Diet Plan Table */
+.diet-plan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.diet-plan-table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: rgba(102, 209, 110, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.diet-plan-table th, .diet-plan-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.diet-plan-table th {
+    background-color: rgba(80, 180, 90, 0.9);
+    color: white;
+    font-weight: bold;
+}
+
+.diet-plan-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.diet-plan-table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.download-button,
+.email-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.download-button:hover,
+.email-button:hover {
+    background-color: #45a049;
+}
+
+.download-button:disabled,
+.email-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    margin-top: 30px;
+    padding: 15px;
+    width: 90%;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-container h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.chatbot-input {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    resize: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-submit {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chatbot-submit:hover {
+    background-color: #45a049;
+}
+
+.dislike-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: red;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+.dislike-button:hover {
+    transform: scale(1.2);
+}
+
+.tips-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tips-container h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.tips-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.tips-container li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Updated Email Button */
+.email-button {
+    padding: 12px 24px; /* Adjusted padding for a more rectangular shape */
+    background-color: #66d16e; /* Set the background color to match the navbar green */
+    color: white;
+    border: none;
+    border-radius: 25px; /* More rounded corners for a rectangular appearance */
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.email-button:hover {
+    background-color: #4fae51; /* Darker green shade on hover */
+}
+
+/* Disabled state */
+.email-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
