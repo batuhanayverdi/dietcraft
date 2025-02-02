@@ -395,10 +395,10 @@ const DietPlan = () => {
             <nav className="navbar">
                 <div className="nav-icon">⭐</div>
                 <div className="nav-links">
-                    <button onClick={() => navigate('/')}>Main Page</button>
+                    <button onClick={() => navigate('/home')}>Main Page</button>
                     <button onClick={() => navigate('/about')}>About</button>
+                    <button onClick={() => navigate('/login')}>Welcome</button>
                 </div>
-                <button className="welcome-button">Welcome {auth.currentUser?.displayName || 'User'}!</button>
             </nav>
     
             <h2>Your Suggested Weekly Diet Plan:</h2>

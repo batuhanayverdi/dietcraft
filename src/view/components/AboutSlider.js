@@ -28,17 +28,14 @@ const AboutSlider = () => {
         <div style={{ textAlign: 'center', padding: '20px', maxWidth: '100%', margin: '0 auto' }}>
             
             {/* ✅ Navigasyon Barı */}
-            <nav className="navbar" style={{
-                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                padding: '10px 20px', backgroundColor: '#66d16e', borderRadius: '20px'
-            }}>
+            <nav className="navbar">
                 <div className="nav-icon">⭐</div>
                 <div className="nav-links">
-                    <button onClick={() => navigate('/')} style={{ padding: '10px', border: 'none', borderRadius: '10px' }}>Main Page</button>
-                    <button onClick={() => navigate('/about')} style={{ padding: '10px', border: 'none', borderRadius: '10px' }}>About</button>
+                    <button onClick={() => navigate('/home')}>Main Page</button>
+                    <button onClick={() => navigate('/about')}>About</button>
+                    <button onClick={() => navigate('/login')}>Welcome</button>
                 </div>
-                <button className="welcome-button" style={{ padding: '10px', borderRadius: '20px' }}>Welcome Hamide!</button>
-            </nav>
+            </nav>
 
             {/* ✅ Slider Yapısı */}
             <Slider {...settings} style={{ marginTop: '80px' }}>

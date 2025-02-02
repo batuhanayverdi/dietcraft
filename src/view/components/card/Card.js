@@ -314,11 +314,11 @@ const Card = () => {
             <nav className="navbar">
                 <div className="nav-icon">⭐</div>
                 <div className="nav-links">
-                    <button onClick={() => navigate('/')}>Main Page</button>
+                    <button onClick={() => navigate('/home')}>Main Page</button>
                     <button onClick={() => navigate('/about')}>About</button>
+                    <button onClick={() => navigate('/login')}>Welcome</button>
                 </div>
-                <button className="welcome-button">Welcome!</button>
-            </nav>
+            </nav>
 
             {/* ✅ Kart Alanı */}
             <div className="card-container">
