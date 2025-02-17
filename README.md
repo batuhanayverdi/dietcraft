@@ -48,7 +48,7 @@ OPENAI_API_KEY=your_api_key_here
 node server.js
 
 5️⃣ Start the Frontend
-npm start
+npm run client
 
 📷 How It Works
 1️⃣ User fills out the form with personal details, preferences, and dietary needs.
