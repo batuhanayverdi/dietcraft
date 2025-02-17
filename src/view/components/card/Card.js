@@ -27,7 +27,18 @@ const Card = () => {
     const [loading, setLoading] = useState(false); // Yükleme durumunu kontrol eder
     const [isFridgeAnalyzing, setIsFridgeAnalyzing] = useState(false);
 
-
+    const MAX_INPUT_LENGTH = 25;  // Maksimum karakter sınırı
+    const [errorMessage, setErrorMessage] = useState('');
+    
+    const handleAllergyInputChange = (e) => {
+        const input = e.target.value;
+        if (input.length > MAX_INPUT_LENGTH) {
+            setErrorMessage('Maximum character limit reached.');
+        } else {
+            setErrorMessage('');
+            setAllergyType(input);
+        }
+    };
 
     const handleFridgeUpload = (e) => {
         const file = e.target.files[0];
@@ -461,12 +472,15 @@ const Card = () => {
                     </div>
 
                     {allergy && (
-                        <input
-                            type="text"
-                            placeholder="If yes, please write"
-                            value={allergyType}
-                            onChange={(e) => setAllergyType(e.target.value)}
-                        />
+                        <>
+                            <input
+                                type="text"
+                                placeholder="If yes, please write"
+                                value={allergyType}
+                                onChange={handleAllergyInputChange}
+                            />
+                            {errorMessage && <p style={{ color: 'red', fontWeight: 'bold' }}>{errorMessage}</p>}
+                        </>
                     )}
 
                     {/* Taste Preferences */}
