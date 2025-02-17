@@ -195,6 +195,7 @@ const Card = () => {
                     - If any allergen (${sanitizeInput(allergyType)}) is detected in the recipe, provide a clear replacement, such as replacing "apples" with "pears."
                     - Use the fridge items (${recognizedObjects.length > 0 ? recognizedObjects.join(", ") : 'None'}) as primary ingredients.
                     - Suggest replacements if the fridge items are insufficient for a full meal.
+                    - Validate only the relevant inputs for ${sanitizeInput(allergyType)}. Ignore any unrelated information or inputs for ${sanitizeInput(allergyType)}.
 
                     Format:
                     Each row of the table should follow this format: "Day | Meal | Details".
